@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ArchBox</title>
+    <link rel="stylesheet" href="stylesheets/homepage.css">
+  </head>
+  <body>
+	<script src="index.js"></script>
+
+	 
+    <!-- Giving title of the first parallax -->
+    <div class="parallax-1">
+        <h2>ArchBox: Ryo</h2>
+        <p>A NAS device with physical and digital security features, running Arch Linux, named after the japanese word for 'excellency'</p>
+    </div>
+    
+    <!--Content of first parallax -->
+    <div class="para-1">
+    	<h2>Encryption and Keyfiles</h2>
+    
+    	<p>Ryo uses keyfiles for both of it's encryption methods. The physical side uses a USB storage device with a keyfile, while the digital side uses a SSH keyfile and custom configuration file.</p>
+    	
+    	<div class="left">
+    	
+    	<h3>Physical</h3>
+    	
+    	<div class="left_contain">
+    	
+    	<p>In order for Ryo to boot up, it needs to have a 2048 bit keyfile stored on a USB device plugged into it. If this 'key' is removed while the computer is on, a custom service script will turn the computer off within 30 seconds of the key being removed.</p>
+    	
+    	<img src="stylesheets/usbtrans.png">
+    	
+    	</div>
+    	
+    	</div>
+    
+    	<div class="right">
+    	
+    	<h3>Digital</h3>
+    	
+    	<div class="right_contain">
+    	
+    	<div class="right_images_contain">
+    	
+    	<img class=img1 src="stylesheets/router.png">
+    	
+    	<img class=img2 src="stylesheets/rsa_key_cropped.png">
+    	
+    	</div>
+    	
+    	<p>Ryo only allows connection to it's SSH service on a self-hosted access point, that doesn't broadcast it's SSID and has a WPA2 password. It also requires an SSH keyfile and custom port knocking program on the connection computer.</p>
+    	
+    	
+    	</div>
+    	
+    	</div>
+    
+    
+    </div>
+ 
+ 
+ 
+ 
+    <!-- Giving title of the second parallax -->
+    <div class="parallax-2">
+        <h2>VPN Tunneling and Firewalls</h2>
+    </div>
+  
+    <!--Content of second parallax -->
+    <div class="para-2">
+        	<p class=header>Ryo uses UFW and Openvpn, along with systemd services, to automatically connect to a VPN and enable a killswitch, so that all traffic routed to the computer will come through the VPN connection.</p>
+        
+        <div class=button_contain>
+        	
+        <a href="https://systemd.io/">	
+        <button type="button"> <img src="stylesheets/system_d.png" height ="120" width=auto> </button>
+        </a>
+        
+                <a href="https://launchpad.net/ufw">	
+        <button type="button"> <img src="stylesheets/ufw_new.png" height ="120" width=auto> </button>
+        </a>
+
+        <a href="https://openvpn.net/">	
+        <button type="button"> <img src="stylesheets/openvpn.png" height ="120" width=auto> </button>
+        </a>
+
+	</div>
+
+<p class=footer>Click the buttons to be directed to more information!</p>
+
+    </div>
+  
+  
+  
+    <!--Third Paralax Title-->
+    <div class="parallax-3">
+        <h2>Web App Hosting</h2>
+        
+        <p>A varienty of webapps have been configured and installed on Ryo. Jellyfin hosts audiobooks and podcasts, Lanraragi hosts books and comics, and netdata provides logging and remote resource monitoring.</p>
+        
+        <div class=button_contain2>
+        	
+        <a href="https://jellyfin.org/">	
+        <button type="button"> <img src="stylesheets/jellyfin.png" height ="120" width=auto> </button>
+        </a>
+        
+                <a href="https://github.com/Difegue/LANraragi">	
+        <button type="button"> <img src="stylesheets/lanraragi.png" height ="120" width=auto> </button>
+        </a>
+
+        <a href="https://www.netdata.cloud/">	
+        <button type="button"> <img src="stylesheets/netdata.png" height ="120" width=auto> </button>
+        </a>
+
+	</div>
+        
+        
+        
+    </div>
+  
+      <!--Third Paralax content-->
+  
+    <div class="para-3">
+        <p>
+	This website, and project described within, was written by Noah Lessard. Check out his github here!
+        </p>
+        
+         <a href="https://github.com/noahlessard">	
+        <button type="button"> <img src="stylesheets/github.png" height ="30" width=auto> </button>
+       </a> 
+        
+    </div>
+
+  </body>
+</html>
