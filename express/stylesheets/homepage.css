@@ -15,9 +15,50 @@
             padding: 0px;
         }
         
-        body, html{
-          height: 100%;
+        .hide{
+  	overflow: hidden;
+  	background-color: black;
+  	position: fixed; /* Set the navbar to fixed position */
+  	top: 0; /* Position the navbar at the top of the page */
+  	width: 100%; /* Full width */
+	height: 100%;
+	z-index:3;
+	display: none;
         }
+        
+        .hide p {
+        display: flex;
+  	    justify-content: center;
+  	    align-items: center;
+            margin: auto;
+            position: relative;
+            top: 20vh;
+            color: white;
+            text-align: center;
+            font-size: 6vw;
+            font-weight: 700;
+  	    font-family: 'gothic'; 
+        
+        }
+        
+        @media only screen and (max-width: 600px) {
+   	.hide {
+        display: initial;
+    }
+}
+        
+        body, html{
+	/*width:100%;*/
+	/*height:100%;*/
+        }
+        
+        body {
+    	margin: 0;
+    	width: 100vw;
+    	max-width: 100vw;
+    	height: 100vh;
+	}
+
   
         /* Styling the parallax1 background */
         .parallax-1 {
@@ -36,14 +77,15 @@
   	    align-items: center;
             margin: auto;
             position: relative;
-            top: 30%;
-            left: -26%;
-            width: 48%;
-            height: 18%;
+            top: 30vh;
+            left: -26vw;
+            width: 48vw;
+            height: 18vh;
             background-color: #07325b;
             color: white;
             text-align: center;
-            font-size: 120px;
+            /* font-size: 120px; */
+            font-size:6vw;
             font-weight: 800;
   	    font-family: 'gothic'; 
     	    white-space: nowrap;     
@@ -56,14 +98,14 @@
   	    align-items: center;
             margin: auto;
             position: relative;
-            top: 38%;
-            left: -33%;
-            width: 32%;
-            height: 17%;
+            top: 38vh;
+            left: -33vw;
+            width: 34vw;
+            height: 19vh;
             background-color: #07325b;
             color: white;
             text-align: center;
-            font-size: 30px;
+            font-size: 1.5vw;
             font-weight: 200;
   	    font-family: 'gothic'; 
 
@@ -85,13 +127,13 @@
   	    align-items: center;
             margin: auto;
             position: relative;
-            top: 50%;
-            width: 50%;
-            height: 16%;
+            top: 50vh;
+            width: 50vw;
+            height: 16vh;
             background-color: #07325b;
             color: white;
             text-align: center;
-            font-size: 60px;
+            font-size: 3vw;
   	    font-family: 'gothic'; 
         }
         
@@ -102,13 +144,16 @@
   	    align-items: center;
             margin: auto;
             position: relative;
-            top: 20%;
-            width: 45%;
-            height: 15%;
+            /*top: 20%; */
+            top: 20vh;
+            /*width: 45%; */
+            /*height: 15%; */
+            width: 45vw;
+            height: 15vh;
             background-color: #052543;
             color: white;
             text-align: center;
-            font-size: 36px;
+            font-size: 1.8vw;
             font-weight: 200;
   	    font-family: 'gothic'; 
         
@@ -121,45 +166,92 @@
   	    align-items: center;
             margin: auto;
             position: relative;
-            top: 4%;
+            /* margin-top: 20vh; */
+            margin-top: 20vh;
             width: 45%;
-            height: 10%;
+            /* height: 10%; */
             color: white;
             text-align: center;
-            font-size: 20px;
+            font-size: 2vw;
             font-weight: 200;
   	    font-family: 'gothic'; 
         }
         
         .button_contain {
         display: flex;
-        margin-top: 15%;
+        /*margin-top: 15%;*/
+        margin-top: 40vh;
         justify-content: center;
   	align-items: center;
         }
         
         
-        .button_contain a{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 3%;
+              
+        .button_contain button{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        margin-left:5vw;
+        margin-right:5vw;
+        background-size: 100% 100%;
         }
+        
+        .button_contain button.one{
+        background-image: url('system_d.png');
+        height: 10vh;
+        width: 12vw;
+        }
+        
+        .button_contain button.two{
+        background-image: url('ufw_new.png');
+        height: 10vh;
+        width: 10vw;
+        }
+        
+        .button_contain button.three{
+        background-image: url('openvpn.png');
+        height: 10vh;
+        width: 12vw;
+        }
+        
         
         .button_contain2 {
         display: flex;
-        margin-top: 15%;
+        margin-top: 40vh;
         justify-content: center;
   	align-items: center;
         }
         
         
-        .button_contain2 a{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 3%;
+        .button_contain2 button{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        margin-left:5vw;
+        margin-right:5vw;
+        background-size: 100% 100%;
         }
+        
+        .button_contain2 button.one{
+        background-image: url('jellyfin.png');
+        height: 10vh;
+        width: 10vw;
+        }
+        
+        .button_contain2 button.two{
+        background-image: url('lanraragi.png');
+        height: 12vh;
+        width: 6vw;
+        }
+        
+        .button_contain2 button.three{
+        background-image: url('netdata.png');
+        height: 10vh;
+        width: 14vw;
+        }
+        
+        
+        
         
         .parallax-3 {
             width: 100%;
@@ -176,13 +268,14 @@
   	    align-items: center;
             margin: auto;
             position: relative;
-            top: 15%;
-            width: 35%;
-            height: 16%;
+            top: 15vh;
+            width: 35vw;
+            height: 16vh;
             background-color: #07325b;
             color: white;
             text-align: center;
-            font-size: 60px;
+            font-size: 3vw;
+	    /* font-size: clamp(30px, 5vw, 64px); */
   	    font-family: 'gothic'; 
         }
         
@@ -193,13 +286,13 @@
   	    align-items: center;
             margin: auto;
             position: relative;
-            top: 22%;
-            width: 50%;
-            height: 25%;
+            top: 22vh;
+            width: 50vw;
+            height: 25vh;
             color: white;
             background-color: #07325b;
             text-align: center;
-            font-size: 36px;
+            font-size: 1.8vw;
             font-weight: 200;
   	    font-family: 'gothic'; 
         
@@ -208,7 +301,7 @@
         
   
         .para-1 {
-            height: 160%;
+            height: 170%;
             background-color: #052543;
             color: white;
         }
@@ -219,12 +312,12 @@
   	    align-items: center;
             margin: auto;
             position: relative;
-            top: 7%;
-            width: 50%;
-            height: 16%;
+            top: 7vh;
+            width: 50vw;
+            height: 16vh;
             <!-- background-color: #0b6198; -->
             text-align: center;
-            font-size: 60px;
+            font-size: 3vw;
   	    font-family: 'gothic'; 
         
         }
@@ -235,12 +328,12 @@
   	    align-items: center;
             margin: auto;
             position: relative;
-            top: 0%;
-            width: 50%;
-            height: 20%;
+            top: 0vh;
+            width: 50vw;
+            height: 20vh;
             <!-- background-color: #0b6198; -->
             text-align: center;
-            font-size: 29px;
+            font-size: 1.4vw;
   	    font-family: 'gothic'; 
         
         }
@@ -256,16 +349,16 @@
             display: flex;
             justify-content: center;
   	align-items: center;
-            padding: 10px;
+            padding: 1vw;
             background-color: #333f4a;
             color: black;
         }
         
         .para-3 p{
   	font-family: 'body';
-        font-size: 20px;
+        font-size: 1vw;
         font-weight: 700;
-        padding-right:10px;
+        padding-right:1vw;
         }
         
         
@@ -274,13 +367,13 @@
   	    justify-content: center;
             margin: auto;
             position: relative;
-            top: 10%;
-            left: -20%;
-            width: 30%;
-            height: 30%;
+            top: 10vh;
+            left: -20vw;
+            width: 30vw;
+            height: 10vh;
             text-align: center;
-            font-size: 40px;
-            font-weight: 200;
+            font-size: 3vw;
+            font-weight: 700;
   	    font-family: 'gothic'; 
 }
 
@@ -289,14 +382,14 @@
            display: flex;
   	    /* justify-content: center; */
             /* margin: auto; */
-            margin-left: 15%;
+            margin-left: 15vw;
             /* position: relative; */
-            top: 10%;
+            top: 1vh;
             /* left: -20%; */
-            width: 30%;
-            height: 30%;
+            width: 30vw;
+            height: 30vh;
             text-align: center;
-            font-size: 25px;
+            font-size: 1.25vw;
             font-weight: 200;
   	    font-family: 'gothic'; 
   	}
@@ -311,7 +404,7 @@
   	 
   	 .left_contain{
   	 display: flex;
-  	 margin-bottom: 6%;
+  	 margin-bottom: 6vh;
   	 }
   	 
 
@@ -321,13 +414,13 @@
   	    justify-content: center;
             margin: auto;
             position: relative;
-            top: 10%;
-            left: 20%;
-            width: 30%;
-            height: 30%;
+            top: 10vh;
+            left: 20vw;
+            width: 30vw;
+            height: 10vh;
             text-align: center;
-            font-size: 40px;
-            font-weight: 200;
+            font-size: 3vw;
+            font-weight: 700;
   	    font-family: 'gothic';  
 
 }
@@ -336,14 +429,14 @@
   	    display: flex;
   	    /* justify-content: center; */
             /* margin: auto; */
-            margin-right: 15%;
+            /* margin-right: 15vw; */
             /* position: relative; */
-            top: 10%;
+            top: 1vh;
             /* left: -20%; */
-            width: 30%;
-            height: 30%;
+            width: 30vw;
+            height: 10vh;
             text-align: center;
-            font-size: 25px;
+            font-size: 1.25vw;
             font-weight: 200;
   	    font-family: 'gothic'; 
 
@@ -358,25 +451,25 @@
   	 .img1 {
   	position: relative;
   	z-index: 2;
-  	left: 53%;
-  	top: -5%;
-  	width: 30%;
+  	left: 27vw;
+  	top: 8vh;
+  	width: 15vw;
   	height: auto;
 }
 
 	.img2 {
   	position: relative;
   	z-index: 1;
-  	left: -4%;
-  	top: -30%;
-  	width: 35%;
+  	left: -4vw;
+  	top: 1vh;
+  	width: 20vw;
   	height: auto;
  
 }
   	 
   	 .right_contain{
   	 display: flex;
-  	 margin-bottom: 6%;
+  	 margin-bottom: 1vh;
   	 }
   	 
         

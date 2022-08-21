@@ -2,14 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ArchBox</title>
     <link rel="stylesheet" href="stylesheets/homepage.css">
   </head>
   <body>
-	<script src="index.js"></script>
+	<!-- <script src="index.js"></script> -->
 
+    <!-- The Div that comes up if the screen is too small -->
+    
+    <div class="hide"> 
+    
+    <p> Flip your device sideways for a better viewing experience!</p>
+    
+    </div>
+	 
+	 
+	 
 	 
     <!-- Giving title of the first parallax -->
     <div class="parallax-1">
@@ -74,18 +84,15 @@
         	<p class=header>Ryo uses UFW and Openvpn, along with systemd services, to automatically connect to a VPN and enable a killswitch, so that all traffic routed to the computer will come through the VPN connection.</p>
         
         <div class=button_contain>
-        	
-        <a href="https://systemd.io/">	
-        <button type="button"> <img src="stylesheets/system_d.png" height ="120" width=auto> </button>
-        </a>
         
-                <a href="https://launchpad.net/ufw">	
-        <button type="button"> <img src="stylesheets/ufw_new.png" height ="120" width=auto> </button>
-        </a>
-
-        <a href="https://openvpn.net/">	
-        <button type="button"> <img src="stylesheets/openvpn.png" height ="120" width=auto> </button>
-        </a>
+        
+        <button class="one" onclick=" window.open('https://systemd.io/','_blank')">
+        	
+        <button class="two" onclick=" window.open('https://launchpad.net/ufw')">
+           
+        <button class="three" onclick=" window.open('https://openvpn.net/','_blank')">
+        
+        
 
 	</div>
 
@@ -99,21 +106,15 @@
     <div class="parallax-3">
         <h2>Web App Hosting</h2>
         
-        <p>A varienty of webapps have been configured and installed on Ryo. Jellyfin hosts audiobooks and podcasts, Lanraragi hosts books and comics, and netdata provides logging and remote resource monitoring.</p>
+        <p>A varienty of webapps have been configured and installed on Ryo. Jellyfin hosts audiobooks and podcasts, Lanraragi hosts books and comics, and Netdata provides logging and remote resource monitoring.</p>
         
         <div class=button_contain2>
         	
-        <a href="https://jellyfin.org/">	
-        <button type="button"> <img src="stylesheets/jellyfin.png" height ="120" width=auto> </button>
-        </a>
-        
-                <a href="https://github.com/Difegue/LANraragi">	
-        <button type="button"> <img src="stylesheets/lanraragi.png" height ="120" width=auto> </button>
-        </a>
-
-        <a href="https://www.netdata.cloud/">	
-        <button type="button"> <img src="stylesheets/netdata.png" height ="120" width=auto> </button>
-        </a>
+        <button class="one" onclick=" window.open('https://jellyfin.org/','_blank')">
+        	
+        <button class="two" onclick=" window.open('https://github.com/Difegue/LANraragi','_blank')">
+           
+        <button class="three" onclick=" window.open('https://www.netdata.cloud/','_blank')">
 
 	</div>
         
